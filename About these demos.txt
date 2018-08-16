@@ -5,7 +5,7 @@ These projects, which all work both with Real Studio 2012r2.1 and later Xojo ver
 are for Mac OS X only. They all make use of the Cocoa-based NSTableView and NSOutlineView
 controls for flat and hierarchical listboxes.
 
-While Xojo's ListBox is a custom-written control, NSTableView and NSOutlineView are truly
+While Xojo's own ListBox is a custom-written control, NSTableView and NSOutlineView are truly
 native to OSX, and therefore not only look better on a Mac system but also offer improved
 behavior, including smoother scrolling (by pixel, not by line), animation, column re-ordering,
 smarter sorting, and much more.
@@ -44,16 +44,16 @@ ability to support hierarchical Listboxes. If you only need non-hierarchical lis
 use the TableView based code as it's a bit less complex and might also perform a bit faster.
 
 ------------------
-Dynamic ListBoxTV
+ListBoxTV Simple Demo with DataSource
 ------------------
-"Dynamic ListBoxTV.rbp" is a simple demo to show how to make an on-demand listbox based
-on the aforementioned ListBoxTV control.
+This is a simple demo to show how to make an on-demand listbox based on the aforementioned
+ListBoxTV control.
 
 -----------------------------
-Dynamic ListBoxTV (Database)
+ListBoxTV Database with DataSource
 -----------------------------
-"Dynamic ListBoxTV (Database).rbp" is a more complex version of "Dynamic ListBoxTV.rbp" that
-shows how to browse an Sqlite database without having to pre-fill all rows in advance but only
+This is a more complex version of "ListBoxTV Simple Demo with DataSource.rbp" that shows how
+to browse an Sqlite database without having to pre-fill all rows in advance but only
 fetch the rows that are currently to be displayed in the listbox. This will significantly
 increase the performance of browsing DB tables with thousands of rows.
 
