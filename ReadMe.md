@@ -1,11 +1,12 @@
-About the ListBox, TableView and OutlineView demos in this folder
+# About the ListBox, TableView and OutlineView demos
+
 By Thomas Tempelmann, tempelmann@gmail.com
 
-Version 4, 18 Aug 2018
+Version 5 (20 Mar 2019)
 
-The latest version can always be found here:
+The latest version can now always be found here: [https://github.com/tempelmann/XojoListboxTV](https://github.com/tempelmann/XojoListboxTV)
 
-  http://files.tempel.org/RB/Listbox%20TableView
+(Previously, there were at [http://files.tempel.org/RB/Listbox%20TableView](http://files.tempel.org/RB/Listbox%20TableView))
 
 These projects, which all work both with Real Studio 2012r2.1 and later Xojo versions,
 are for Mac OS X only. They all make use of the Cocoa-based NSTableView and NSOutlineView
@@ -16,22 +17,30 @@ native to macOS, and therefore not only look better on a Mac system but also off
 behavior, including smoother scrolling (by pixel, not by line), animation, column re-ordering,
 smarter sorting, and much more.
 
+## Requires MBS Plugins
 
----------------
-OutlineControl
----------------
+The MBS plugins needed for these demos are:
+
+	Cocoa Plugin
+	CocoaBase Plugin
+	CocoaControls Plugin
+	MacOSX Plugin
+	Main Plugin
+
+## The demos
+
+### OutlineControl
+
 The OutlineControl.rbp is a very simple demo to show how to build a hierarchical list using
 NSOutlineView (which is a subclass of NSTableView).
 
--------------
-Disk Browser
--------------
+### Disk Browser
+
 The Disk Browser.rbp is a more complete demo for a hierarchical list, showing the use of
 contextual menus, editing, drag & drop and updating folder contents.
 
--------------------------
-ListBox TableView (flat)
--------------------------
+### ListBox TableView (flat)
+
 The "ListBoxTV TableView.rbp" project contains a near-complete replacement for Xojo's
 ListBox control, along with many test cases for its various abilities. When you run it, you'll
 see the TableView-based listbox at the top, and Xojo's Listbox below it. Both use mostly the
@@ -42,42 +51,26 @@ project, then open your Windows there, and change the Super of the ListBox contr
 your project still compiles and runs. Some things are not fully working yet - see the Notes
 section in ListBoxTV about that.
 
------------------------------------
-ListBox OutlineView (hierarchical)
------------------------------------
+### ListBox OutlineView (hierarchical)
+
 "ListBoxTV OutlineView.rbp" is an extended version of the flat ListboxTV with the ability
 to support hierarchical Listboxes. If you only need non-hierarchical lists in your project,
 use the TableView based code as it's a bit less complex and might also perform a bit faster.
 
---------------------------------------
-ListBoxTV Simple Demo with DataSource
---------------------------------------
+### ListBoxTV Simple Demo with DataSource
+
 This is a simple demo to show how to make an on-demand listbox based on the flat ListBoxTV control.
 
------------------------------------
-ListBoxTV Database with DataSource
------------------------------------
+### ListBoxTV Database with DataSource
+
 This is a more complex version of the flat ListBoxTV that shows how to browse an Sqlite database
 without having to pre-fill all rows in advance but only fetch the rows that are currently to be
 displayed in the listbox. This will significantly increase the performance of browsing DB tables
 with thousands of rows.
 
---------------------------------------
-ListboxTV with ContainerControl Cells
---------------------------------------
+### ListboxTV with ContainerControl Cells
+
 This demonstrates how to use arbitrary Views for every Cell, by using ContainerControls that
 can virtually contain anything (Labels, Buttons, Chexkboxes, PopupMenus). The key to this is
 found in the ListboxDemoWin.cocoaListbox.view event handler. You can apply the same technique
 with the hierarchical (OutlineView) ListboxTV version as well.
-
-
-If you find issues with the ListBoxTV control, or if you make improvements, please contact
-me, and I'll make sure they get updated in the next MBS release.
-
-
-The MBS plugins needed for these demos are:
-	Cocoa Plugin
-	CocoaBase Plugin
-	CocoaControls Plugin
-	MacOSX Plugin
-	Main Plugin
