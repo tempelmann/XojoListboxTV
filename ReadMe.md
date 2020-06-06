@@ -17,6 +17,10 @@ native to macOS, and therefore not only look better on a Mac system but also off
 behavior, including smoother scrolling (by pixel, not by line), animation, column re-ordering,
 smarter sorting, and much more.
 
+## Alternative solution
+
+See this [Xojo blog article](https://blog.xojo.com/2020/04/17/lazy-loading-data-with-listbox/) for a way to do something similar with Xojo's ListBox control:
+
 ## Requires MBS Plugins
 
 The MBS plugins needed for these demos are:
