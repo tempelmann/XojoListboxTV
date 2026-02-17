@@ -6,7 +6,7 @@ Version 8 (17 Feb 2026)
 
 The latest version can now always be found here: [https://github.com/tempelmann/XojoListboxTV](https://github.com/tempelmann/XojoListboxTV)
 
-(Previously, there were at [http://files.tempel.org/RB/Listbox%20TableView](http://files.tempel.org/RB/Listbox%20TableView))
+(Previously, they were at [http://files.tempel.org/RB/Listbox%20TableView](http://files.tempel.org/RB/Listbox%20TableView))
 
 These projects, which all work both with Real Studio 2012r2.1 and later Xojo versions,
 are for Mac OS X only. They all make use of the Cocoa-based NSTableView and NSOutlineView
