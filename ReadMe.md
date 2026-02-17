@@ -2,7 +2,7 @@
 
 By Thomas Tempelmann, tempelmann@gmail.com
 
-Version 5 (20 Mar 2019)
+Version 8 (17 Feb 2026)
 
 The latest version can now always be found here: [https://github.com/tempelmann/XojoListboxTV](https://github.com/tempelmann/XojoListboxTV)
 
@@ -60,6 +60,11 @@ section in ListBoxTV about that.
 "ListBoxTV OutlineView.rbp" is an extended version of the flat ListboxTV with the ability
 to support hierarchical Listboxes. If you only need non-hierarchical lists in your project,
 use the TableView based code as it's a bit less complex and might also perform a bit faster.
+
+There's currently an issue with dragging rows within a hierarchical listbox on macOS 12 and later:
+The old code doesn't work any more.
+There's a WIP (work-in-progress) version of this, but it's not working correctly, yet, i.e.
+it may place the dragged items into the wrong row. Feel free to debug this.
 
 ### ListBoxTV Simple Demo with DataSource
 
